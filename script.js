@@ -21,3 +21,6 @@ const counter = value => {
 
 counter(10)
 counter(10)
+
+const a = 20
+const b = 30
