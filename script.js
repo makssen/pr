@@ -15,8 +15,6 @@ const obj = {
 const sumObj = Object.values(obj).reduce((acc, item) => acc + item, 0)
 console.log(sumObj)
 
-console.log('Pull from test')
-
 const f1 = () => {
   let count = 0
   return () => {
