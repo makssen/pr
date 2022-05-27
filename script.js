@@ -15,14 +15,9 @@ const obj = {
 const sumObj = Object.values(obj).reduce((acc, item) => acc + item, 0)
 console.log(sumObj)
 
-const f1 = () => {
-  let count = 0
-  return () => {
-    console.log(++count)
-  }
+const counter = value => {
+  return value++
 }
 
-const counter = f1()
-counter()
-counter()
-counter()
+counter(10)
+counter(10)
