@@ -15,9 +15,13 @@ const obj = {
 const sumObj = Object.values(obj).reduce((acc, item) => acc + item, 0)
 console.log(sumObj)
 
-const counter = value => {
-  return value++
+function counter(value) {
+  const res = []
+  for (let i = 0; i < value; i++) {
+    res.push(i + 1)
+  }
+  return res
 }
 
-counter(10)
-counter(10)
+let arrRes = counter(10)
+console.log(arrRes)
